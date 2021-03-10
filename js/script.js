@@ -22,8 +22,8 @@ function clean() {
 var mas = [];
 var mas2 = [];
 var generalMass = [];
-var Sw = 20,
-	Sh = 20,
+var Sw = 10,
+	Sh = 10,
 	nw = canvas.width / Sw,
 	nh = canvas.height / Sh,
 	count = 0,
@@ -108,9 +108,9 @@ function startLife() {
 			// 	default:
 			// 		mas2[i][j] = 0;
 			// 		break;
-			// }
-		}
-	}
+			// };
+		};
+	};
 
 
 	mas = mas2;
@@ -120,7 +120,7 @@ function startLife() {
 		document.querySelector('.answer').innerHTML = 'Stoped. The Life is dead.';
 		clearTimeout(timer);
 		return;
-	}
+	};
 
 	if (!writtenMessage) {
 		for (let l = 0; l < generalMass.length; l++) {
@@ -205,6 +205,18 @@ function isNullMass(mass) {
 	return true;
 }
 
+function randomLife() {
+	for (let i = 0; i < Sh; i++) {
+		mas[i] = [];
+		for (let j = 0; j < Sw; j++) {
+			mas[i][j] = Math.round(Math.random());
+		}
+	}
+	drawField();
+	generalMass[0] = mas;
+
+}
+
 
 
 
@@ -229,13 +241,5 @@ function mainFunc() {
 		}
 		drawField();
 		generalMass[0] = mas;
-		// for (let i = 0; i < Sh; i++) {
-		// 	for (let j = 0; j < Sw; j++) {
-		// 		logString = logString + `${mas[i][j]} || `;
-		// 	}
-		// 	console.log(logString);
-		// 	logString = '';
-		// }
-		// console.log('');
 	}
 };
