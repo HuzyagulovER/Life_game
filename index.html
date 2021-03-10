@@ -1,1 +1,34 @@
-<!DOCTYPE html><html lang="en"><head>	<meta charset="UTF-8">	<meta http-equiv="X-UA-Compatible" content="IE=edge">	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<link rel="stylesheet" href="/css/style.min.css">	<title>Document</title></head><body>		<main class="main">		<h1 class="game-name">Игра «Жизнь»</h1>		<canvas class="canvas" width="500" height="500"></canvas>		<p class="count-output">Количество циклов: <span class="count">0</span></p>		<p class="answer"><span style="color: #000000">Not answer.</span></p>		<div class="button__container">			<button onclick="cleanField(); console.clear();">Очистить</button>			<button onclick="clearTimeout(timer)">Пауза</button>			<button onclick="randomLife()">Сгенерировать</button>			<button onclick="startLife()">Запустить</button>		</div>	</main>		<script src=" /js/script.js">	</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<main class="main">
+		<h1 class="game-name">Игра «Жизнь»</h1>
+		<canvas class="canvas" width="500" height="500"></canvas>
+		<p class="count-output">Количество циклов: <span class="count">0</span></p>
+		<p class="answer"><span style="color: #000000">Not answer.</span></p>
+		<div class="button__container">
+			<button onclick="cleanField(); console.clear();">Очистить</button>
+			<button onclick="clearTimeout(timer)">Пауза</button>
+			<button onclick="randomLife()">Сгенерировать</button>
+			<button onclick="startLife()">Запустить</button>
+		</div>
+	</main>
+
+
+
+	<script src=" js/script.min.js">
+	</script>
+</body>
+
+</html>
