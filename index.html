@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="/img/favicon.ico" sizes="48x48">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="app">
+		<des :id="9"></des>
+		<main class="main">
+			<h1 class="game-name">Игра «Жизнь»</h1>
+			<div class="canvas-pat"></div>
+			<!-- <canvas class="canvas" width="400" height="400"></canvas> -->
+			<p class="count-output">Количество циклов: <span class="count">0</span></p>
+			<p class="answer"><span style="color: #000000">Not answer.</span></p>
+			<div class="button__container">
+				<button onclick="cleanField(); console.clear();">Очистить</button>
+				<button onclick="clearTimeout(timer)">Пауза</button>
+				<button onclick="randomLife()">Сгенерировать</button>
+				<button onclick="startLife()">Запустить</button>
+			</div>
+		</main>
+	</div>
+	<script src="/js/desc.js"></script>
+	<script src="js/script.js">
+	</script>
+</body>
+
+</html>

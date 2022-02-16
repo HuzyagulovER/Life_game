@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+}
+
+#app {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 624px) {
+	html {
+		font-size: calc(100vw/39);
+	}
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #000000;
+}
+
+.game-name {
+	color: #ffffff;
+	margin-bottom: 30px;
+	font-size: 3rem;
+}
+
+.main {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.canvas {
+	border: 1px solid #fff;
+	background-color: #ffffff;
+	max-width: 500px;
+}
+
+.canvas-pat {
+	position: absolute;
+	max-width: 500px;
+	width: 80%;
+}
+
+.count-output {
+	color: #ffffff;
+	margin: 10px;
+}
+
+.answer {
+	color: red;
+	margin: 10px;
+	line-height: 18px;
+}
+
+.button__container {
+	margin: 10px;
+}
+
+button {
+	padding: 5px;
+}
